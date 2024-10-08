@@ -1,24 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #edbcc6;
     color: black;
-}                                                                   
+}
 
 /* cabeçalho do site */
 .site-header {
     background-color: #523e27;
     color: #edbcc6;
-}     
-    
-.site-header {                                              
     font-family: "Ribeye Marrow", serif;
     font-weight: 400;
     display: flex;
@@ -32,18 +29,17 @@ body{
     font-size: 2em;
 }
 
-.main-nav .nav-list{
+.main-nav .nav-list {
     font-family: "Ribeye Marrow", serif;
     font-weight: 400;
     display: flex;
     list-style: none;
-    display: flex;
     justify-content: center;
-    background-color:#523e27;
+    background-color: #523e27;
 }
 
 .main-nav .main-item {
-    margin: 0 05px;
+    margin: 0 5px;
 }
 
 .main-nav .nav-link {
@@ -116,8 +112,6 @@ body{
     width: 150px;
     display: flex;
     border-radius: 300px;
-
-   
 }
 
 .image-caption {
@@ -176,35 +170,33 @@ body{
     color: rgb(235, 196, 235);
     text-decoration: none;
     transition: color 0.3s;
-  }
+}
 
-  .email-link:hover {
+.email-link:hover {
     color: #fff;
-  }
+}
 
-  .footer-copy {
+.footer-copy {
     font-size: 0.9em;
     color: #ccc;
-  }
+}
 
-
-  /* pagina de contato*/
-  form {
+form {
     max-width: 600px;
     margin: 0 auto;
     background-color: #ffff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px; 
+    box-shadow: 0 0 10px;
 }
 
-form legend{
+form legend {
     padding: 0 10px;
     font-weight: bold;
     color: black;
 }
 
-form fieldset{
+form fieldset {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 20px;
@@ -213,7 +205,7 @@ form fieldset{
 form label {
     display: block;
     margin-bottom: 8px;
-    color: black
+    color: black;
 }
 
 form input[type="text"],
@@ -221,9 +213,9 @@ form input[type="email"],
 form input[type="password"],
 form input[type="number"],
 form input[type="date"],
-form input[type="url"]
+form input[type="url"],
 form select,
-form textarea{
+form textarea {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 20px;
@@ -231,7 +223,7 @@ form textarea{
 }
 
 form input[type="radio"],
-form input[type="checkbox"]{
+form input[type="checkbox"] {
     margin-right: 10px;
 }
 
@@ -250,21 +242,99 @@ form button-hover {
 }
 
 .article-contato {
-    color:  #5e5e5e;
+    color: #5e5e5e;
     font-size: 1.8em;
     margin-bottom: 5px;
     text-align: center;
 }
 
-.legend-contato{
+.legend-contato {
     color: #edbcc6;
     font-size: 1.5em;
-    margin-bottom: 5px;   
+    margin-bottom: 5px;
 }
 
-.article-img{
+.article-img {
     width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+@media (max-width: 1024px) {
+    .site-header {
+        gap: 2rem;
+        padding: 15px;
+    }
+
+    .main-nav .nav-link {
+        margin: 0 50px;
+    }
+
+    .main-content {
+        max-width: 1000px;
+        padding: 0 10px;
+    }
+
+    .article, .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .main-nav .nav-list {
+        flex-direction: column;
+    }
+
+    .main-nav .nav-link {
+        margin: 10px 0;
+    }
+
+    .main-content {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .article, .sidebar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header {
+        padding: 10px;
+    }
+
+    .site-title {
+        font-size: 1.5em;
+    }
+
+    .main-nav .nav-link {
+        font-size: 1em;
+        margin: 5px 0;
+    }
+
+    .main-content {
+        padding: 5px;
+    }
+
+    .article-title {
+        font-size: 1.5em;
+    }
+
+    .article-image {
+        width: 100px;
+    }
+
+    .sidebar {
+        padding: 10px;
+    }
 }
