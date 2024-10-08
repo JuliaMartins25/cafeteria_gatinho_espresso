@@ -30,6 +30,7 @@ body{
     list-style: none;
     display: flex;
     justify-content: center;
+    background-color: #523e27;
 }
 
 .main-nav .main-item {
