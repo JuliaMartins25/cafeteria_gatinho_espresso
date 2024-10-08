@@ -261,3 +261,10 @@ form button-hover {
     font-size: 1.5em;
     margin-bottom: 5px;   
 }
+
+.article-img{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
